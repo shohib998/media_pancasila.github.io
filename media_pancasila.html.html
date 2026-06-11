@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Pembelajaran Pendidikan Pancasila</title>
+    <style>
+        /* Desain Visual & Estetika (CSS) */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            background-color: #f0fdf4; 
+            margin: 0; 
+            padding: 0; 
+            color: #1f2937; 
+        }
+        header { 
+            background: linear-gradient(135deg, #16a34a, #15803d); 
+            color: white; 
+            padding: 50px 20px; 
+            text-align: center; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        header h1 { margin: 0; font-size: 2.5em; letter-spacing: 1px; }
+        header p { margin: 10px 0 0 0; font-weight: 300; font-size: 1.1em; opacity: 0.9; }
+        
+        .container { 
+            max-width: 900px; 
+            margin: -30px auto 40px auto; 
+            padding: 20px; 
+            position: relative;
+        }
+        .card { 
+            background: white; 
+            padding: 30px; 
+            border-radius: 15px; 
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05); 
+            margin-bottom: 30px; 
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+        }
+        .card:hover { 
+            transform: translateY(-5px); 
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+        }
+        h2 { color: #16a34a; border-bottom: 2px solid #bbf7d0; padding-bottom: 10px; margin-top: 0; }
+        
+        /* Area Video */
+        .video-container { 
+            position: relative; 
+            padding-bottom: 56.25%; /* Rasio 16:9 */
+            height: 0; 
+            overflow: hidden; 
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            background-color: #000;
+        }
+        .video-container iframe { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+        }
+        .fallback-link {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #f1f5f9;
+            border-radius: 8px;
+            color: #16a34a;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.2s;
+        }
+        .fallback-link:hover {
+            background-color: #e2e8f0;
+        }
+        
+        /* Tombol Interaktif */
+        .btn { 
+            display: inline-block; 
+            padding: 10px 20px; 
+            background-color: #22c55e; 
+            color: white; 
+            border: none; 
+            border-radius: 8px; 
+            cursor: pointer; 
+            font-size: 0.9em;
+            font-family: inherit;
+            transition: background-color 0.2s, transform 0.1s; 
+        }
+        .btn:hover { background-color: #16a34a; transform: scale(1.02); }
+        .btn:active { transform: scale(0.98); }
+        
+        /* Area Asesmen */
+        .question-box {
+            background-color: #f8fafc;
+            border-left: 4px solid #3b82f6;
+            padding: 15px 20px;
+            margin-bottom: 15px;
+            border-radius: 0 8px 8px 0;
+        }
+        .question-text { font-weight: 600; margin-top: 0; }
+        .answer-hint { 
+            display: none; 
+            margin-top: 15px; 
+            padding-top: 15px;
+            border-top: 1px dashed #cbd5e1;
+            color: #475569; 
+            font-style: italic; 
+            animation: fadeIn 0.4s ease;
+        }
+        .answer-hint.show { display: block; }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Hak & Kewajiban Warga Negara</h1>
+        <p>Pendidikan Pancasila | Kelas X - Semester Genap</p>
+        <p>MA MIFTAHUL ULUM AN-NUR</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="card">
+            <h2>🎯 Tujuan Pembelajaran</h2>
+            <p>Siswa diharapkan mampu <strong>menunjukkan perilaku yang sesuai dengan hak dan kewajiban</strong> sebagai warga sekolah, warga masyarakat, dan warga negara sebagai wujud nyata dari cinta tanah air.</p>
+            <p><em>Pendekatan Belajar:</em> 🧠 <strong>Mind</strong> (Berpikir), ❤️ <strong>Heart</strong> (Merasakan), & ✋ <strong>Hand</strong> (Bertindak).</p>
+        </div>
+
+        <div class="card">
+            <h2>🎥 Ruang Visual</h2>
+            <p>Mari amati video edukasi singkat di bawah ini untuk memahami implementasi hak dan kewajiban dalam kehidupan bernegara sehari-hari.</p>
+            
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/8vLBjEkiK20?rel=0" 
+                    title="YouTube video player: Hak dan Kewajiban Warga Negara" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            
+            <a href="https://www.youtube.com/watch?v=8vLBjEkiK20" target="_blank" class="fallback-link">
+                🔗 Jika video tidak muncul atau error, klik di sini untuk menonton langsung di YouTube.
+            </a>
+        </div>
+
+        <div class="card">
+            <h2>📝 Ruang Diskusi Kelompok (Asesmen)</h2>
+            <p>Berdasarkan pengamatan Anda terhadap video dan materi di atas, diskusikan pertanyaan-pertanyaan berikut bersama kelompok. Klik tombol di bawah tiap pertanyaan untuk panduan diskusi.</p>
+            
+            <div id="quiz-container">
+                </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Data Pertanyaan Asesmen sesuai Dokumen RPP
+        const questions = [
+            "1. Jelaskan pengertian hak dan kewajiban sebagai warga negara!",
+            "2. Sebutkan dan jelaskan masing-masing tiga contoh hak dan tiga contoh kewajiban peserta didik di lingkungan sekolah!",
+            "3. Berikan contoh pelaksanaan hak dan kewajiban warga negara di lingkungan masyarakat!",
+            "4. Apa akibat apabila seseorang hanya menuntut hak tetapi mengabaikan kewajibannya?",
+            "5. Menurut pendapatmu bagaimana cara sebagai pelajar untuk menerapkan nilai-nilai Pancasila dalam menjalankan hak dan kewajiban di sekolah dan masyarakat?"
+        ];
+
+        const container = document.getElementById('quiz-container');
+
+        // Memuat elemen interaktif untuk setiap pertanyaan
+        questions.forEach((q, index) => {
+            const div = document.createElement('div');
+            div.className = 'question-box';
+
+            const qText = document.createElement('p');
+            qText.className = 'question-text';
+            qText.innerText = q;
+
+            const btn = document.createElement('button');
+            btn.className = 'btn';
+            btn.innerText = 'Panduan Diskusi 💬';
+            
+            const hintSpace = document.createElement('div');
+            hintSpace.className = 'answer-hint';
+            hintSpace.innerHTML = `<strong>Panduan:</strong> Diskusikan jawaban ini secara berkelompok. Guru akan menunjuk kelompok Anda untuk mempresentasikannya di depan kelas. Kaitkan jawaban kalian dengan video yang telah ditonton.`;
+
+            // Efek interaktif (buka-tutup)
+            btn.onclick = () => {
+                hintSpace.classList.toggle('show');
+                if (hintSpace.classList.contains('show')) {
+                    btn.innerText = 'Tutup Panduan ✖';
+                    btn.style.backgroundColor = '#ef4444'; 
+                } else {
+                    btn.innerText = 'Panduan Diskusi 💬';
+                    btn.style.backgroundColor = '#22c55e'; 
+                }
+            };
+
+            div.appendChild(qText);
+            div.appendChild(btn);
+            div.appendChild(hintSpace);
+            container.appendChild(div);
+        });
+    </script>
+</body>
+</html>
